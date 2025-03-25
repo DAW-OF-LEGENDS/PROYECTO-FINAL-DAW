@@ -32,8 +32,12 @@ a {
     text-shadow: 0px 0px 4px black;
     font-weight: bold;
 }
-a span {
+a span.title0 {
     font-size: 64px;
+}
+a span.title1 {
+    font-size: 64px;
+    color: #C89B3C;
 }
 main {
     max-width: 100%;
@@ -78,7 +82,7 @@ body.dark-mode  { background-image: url('../images/fondos/darkBackgroundImage.pn
 body.light-mode { background-image: url('../images/fondos/lightBackgroundImage.png'); }
 body.dark-mode  #theme-mode p::before { content: 'Modo oscuro'; }
 body.light-mode #theme-mode p::before { content: 'Modo claro';  }
-body.dark-mode  a span { color: rgb(255,  64,  64); }
-body.light-mode a span { color: rgb( 64,  64, 255); }
+body.dark-mode  a span.title0 { color: rgb(255,  64,  64); }
+body.light-mode a span.title0 { color: rgb( 64,  64, 255); }
 body.dark-mode  #theme-mode img { background-image: url('../images/objetos/Filo_de_la_Noche.png'); }
 body.light-mode #theme-mode img { background-image: url('../images/objetos/Medallon_de_los_Solari_de_Hierro.png'); }

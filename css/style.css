@@ -95,6 +95,11 @@ main div div.campeon img:hover {
     font-weight: bold;
     text-shadow: 0px 0px 4px black;
 }
+
+#theme-mode p{
+    font-size: 20px;
+}
+
 #theme-mode img {
     width:  32px;
     height: 32px;
@@ -102,6 +107,10 @@ main div div.campeon img:hover {
     border: 2px solid white;
     background-size: cover;
     background-position: center;
+}
+#theme-mode img:hover {
+    width: 40px;
+    height: 40px;
 }
 
 

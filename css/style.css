@@ -13,7 +13,7 @@ html, body{
 }
 body {
     background-position: center;
-    background-size: 120%;
+    background-size: 100vmax 100vmax;
 }
 main {
     padding: 16px;

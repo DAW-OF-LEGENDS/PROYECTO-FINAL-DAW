@@ -37,7 +37,7 @@ a span.title0 {
 }
 a span.title1 {
     font-size: 64px;
-    color: #C89B3C;
+    color: #C89B3C; 
 }
 main {
     max-width: 100%;
@@ -76,7 +76,6 @@ main .title:hover {
 #theme-mode img {
     width:  32px;
     height: 32px;
-    border-radius: 8px;
     border: 2px solid white;
     background-size: cover;
     background-position: center;
@@ -89,8 +88,8 @@ main .title:hover {
 
 body.dark-mode  { background-image: url('../images/fondos/darkBackgroundImage.png');  }
 body.light-mode { background-image: url('../images/fondos/lightBackgroundImage.png'); }
-body.dark-mode  #theme-mode p::before { content: 'Modo oscuro'; }
-body.light-mode #theme-mode p::before { content: 'Modo claro';  }
+body.dark-mode  #theme-mode p::before { content: 'Modo Oscuro'; }
+body.light-mode #theme-mode p::before { content: 'Modo Claro';  }
 body.dark-mode  a span.title0 { color: rgb(255,  64,  64); }
 body.light-mode a span.title0 { color: rgb( 64,  64, 255); }
 body.dark-mode  #theme-mode img { background-image: url('../images/objetos/Filo_de_la_Noche.png'); }

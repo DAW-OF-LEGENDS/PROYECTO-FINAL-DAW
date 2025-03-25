@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-position: center;
+    background-size: 110%;
+}
+main {
+    padding: 16px;
+}
+h1 {
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+a {
+    display: block;
+    font-size: 64px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-weight: bold;
+}
+a span {
+    font-size: 64px;
+}
+main {
+    max-width: 100%;
+}
+main .title {
+    animation: a_out 0.1s forwards;
+}
+main .title:hover {
+    animation: a_in 0.2s forwards;
+}
+@keyframes a_in {
+      0% { scale: 1;}
+    100% { scale: 1.25;}
+}
+@keyframes a_out {
+      0% { scale: 1.25;}
+    100% { scale: 1;}
+}
+#theme-mode {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px black;
+}
+#theme-mode img {
+    width:  32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-size: cover;
+}
+
+
+body.dark-mode  { background-image: url('../images/fondos/darkBackgroundImage.png');  }
+body.light-mode { background-image: url('../images/fondos/lightBackgroundImage.png'); }
+body.dark-mode  #theme-mode p::before { content: 'Modo oscuro'; }
+body.light-mode #theme-mode p::before { content: 'Modo claro';  }
+body.dark-mode  a span { color: rgb(255,  64,  64); }
+body.light-mode a span { color: rgb( 64,  64, 255); }
+body.dark-mode  #theme-mode img { background-image: url('../images/objetos/Filo_de_la_Noche.png'); }
+body.light-mode #theme-mode img { background-image: url('../images/objetos/Medallon_de_los_Solari_de_Hierro.png'); }

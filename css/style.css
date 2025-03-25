@@ -13,7 +13,7 @@ html, body{
 }
 body {
     background-position: center;
-    background-size: 110%;
+    background-size: 120%;
 }
 main {
     padding: 16px;
@@ -70,6 +70,7 @@ main .title:hover {
     border-radius: 8px;
     border: 2px solid white;
     background-size: cover;
+    background-position: center;
 }
 
 

@@ -48,6 +48,33 @@ main .title {
 main .title:hover {
     animation: a_in 0.2s forwards;
 }
+main > div  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 16px;
+    background-color: #091428;
+    color: white;
+}
+main div div.campeon {
+    display: block;
+    margin: 16px;
+    width: 350px;
+    border: 2px solid #C89B3C;
+    height: 500px;
+}
+main div div.campeon img {
+    display: block;
+    margin: 0;
+    width: 80%;
+    border: 2px solid #C89B3C;
+    height: 520px;
+    padding-left: 10px;
+}
+main div div.campeon img:hover {
+    border: 2px solid #F0E6D2;
+}
+
 @keyframes a_in {
       0% { scale: 1;}
     100% { scale: 1.25;}

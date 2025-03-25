@@ -64,6 +64,11 @@ main .title:hover {
     font-weight: bold;
     text-shadow: 0px 0px 4px black;
 }
+
+#theme-mode p{
+    font-size: 20px;
+}
+
 #theme-mode img {
     width:  32px;
     height: 32px;

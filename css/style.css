@@ -77,6 +77,10 @@ main .title:hover {
     background-size: cover;
     background-position: center;
 }
+#theme-mode img:hover {
+    width: 40px;
+    height: 40px;
+}
 
 
 body.dark-mode  { background-image: url('../images/fondos/darkBackgroundImage.png');  }

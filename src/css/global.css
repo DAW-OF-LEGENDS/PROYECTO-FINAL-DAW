@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: LeagueOfFont;
-    src: url(Friz\ Quadrata\ Regular.ttf);
+    src: url(Fuentes/Friz\ Quadrata\ Regular.ttf);
 }
 html, body{
     display: flex;
@@ -21,75 +21,13 @@ body {
 }
 main {
     padding: 16px;
-}
-h1 {
-    text-align: center;
-    font-size: 64px;
-    color: white;
-    text-shadow: 0px 0px 4px black;
-}
-a {
-    display: block;
-    font-size: 64px;
-    text-align: center;
-    color: white;
-    text-shadow: 0px 0px 4px black;
-    font-weight: bold;
-}
-a span.title0 {
-    font-size: 64px;
-}
-a span.title1 {
-    font-size: 64px;
-    color: #C89B3C; 
-}
-main {
-    max-width: 100%;
-}
-main .title {
+    max-width: calc(100% - 32px);
 }
 .window {
-    background: linear-gradient(50deg, #091428, #0A1428);
+    background: linear-gradient(45deg, #091428, #0F1428);
     padding: 32px;
     border: 2px solid #C89B3C;
 }
-main .title:hover {
-    animation: a_in 0.2s forwards;
-}
-main > div  {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8px;
-    gap: 16px;
-    background-color: #091428;
-    color: white;
-}
-main div div.campeon {
-    display: block;
-    margin: 16px;
-    width: 350px;
-    border: 2px solid #C89B3C;
-    height: 500px;
-}
-main div div.campeon img {
-    display: block;
-    margin: 0;
-    width: 80%;
-    border: 2px solid #C89B3C;
-    height: 520px;
-    padding-left: 10px;
-}
-main div div.campeon img:hover {
-    border: 2px solid #F0E6D2;
-}
-
-@keyframes a_in {
-      0% { scale: 1;}
-    100% { scale: 1.25;}
-}
-@keyframes a_out {
-      0% { scale: 1.25;}
-    100% { scale: 1;}
 .window::before {
     content: 'x';
     display: block;
@@ -116,13 +54,8 @@ main div div.campeon img:hover {
     margin-top: 32px;
     margin-bottom: -38px;
 }
-#WelcomeWindow,
-#GodbyeWindow {
-    
-}
-#PaginaMenu .window a {
-    border: 2px solid #C89B3C;
-}
+
+
 #theme-mode {
     position: absolute;
     bottom: 0;
@@ -135,11 +68,9 @@ main div div.campeon img:hover {
     font-weight: bold;
     text-shadow: 0px 0px 4px black;
 }
-
-#theme-mode p{
+#theme-mode p {
     font-size: 20px;
 }
-
 #theme-mode img {
     width:  32px;
     height: 32px;

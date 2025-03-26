@@ -9,7 +9,7 @@ lista = {
         "Botas sibióticas",
         "Botas jonias de la lucidez",
         ""
-        ],
+    ],
     Iniciales: [
         "Poción de vida",
         "Poción reutilizable",

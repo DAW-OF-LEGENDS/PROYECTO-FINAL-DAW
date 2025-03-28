@@ -5,17 +5,36 @@
     text-shadow: 0px 0px 4px black;
 }
 .window a {
-    display: block;
+    display: flex;
     font-size: 64px;
     text-align: center;
-    color: white;
+    color: #C89B3C; 
     text-shadow: 0px 0px 4px black;
     font-weight: bold;
 }
-.window a span.title0 {
-    font-size: 64px;
+.window a:hover::before {
+    content: '>';
+    display: block;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin-left: -98px;
+    margin-right: 34px;
 }
-.window a span.title1 {
+.window a:hover::after {
+    content: '<';
+    display: block;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin-left: 34px;
+    margin-right: -98px;
+}
+.window a span {
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;
     font-size: 64px;
-    color: #C89B3C; 
 }

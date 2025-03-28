@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
 }
-.window .body a{
+.window .body a {
     color: #ffffff;
     display: flex;
 }
@@ -30,6 +30,10 @@
     height: 16px;
     text-align: center;
     display: block;
+}
+.window .foot {
+    display: flex;
+    flex-direction: row;
 }
 .window .foot a {
     color: white;

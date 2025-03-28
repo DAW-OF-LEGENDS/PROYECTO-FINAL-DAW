@@ -1,3 +1,6 @@
+:root {
+    --custom-bg: '';
+}
 * {
     margin: 0;
     font-family: LeagueOfFont;
@@ -17,7 +20,17 @@ html, body{
 }
 body {
     background-position: center;
-    background-size: 100vmax 100vmax;
+    background-size: auto 110vmax;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 1px;
+    background: var(--custom-bg);
 }
 main {
     padding: 16px;

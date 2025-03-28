@@ -1,27 +1,90 @@
 class Objetos {
 lista = {
-    finales: [
-        "Detracción celestial",
-        "Tejesueños",
-        "Perforaplanos de Zaz'Zak",
-        "Trineo del solsticio",
-        "Tonada sanguina",
-        "Botas sibióticas",
-        "Botas jonias de la lucidez",
-        "Botas de rapidez",
-        "Grebas de berserker",
-        "Botas de hechicero",
-        "Botas blindadas",
-        "Botas de mercurio",
-        "Robaalmas de Mejai",
-        "Lucidez carmesí",
-        "Avance eterno",
-        "Marcha veloz",
-        "Grebas de metal",
-        "Botasd del lanzahechizos",
-        "Avance blindado",
-        "Trituradoras encadenadas",
-        "Canción de batalla de Shurelya",
+    finales: {
+        "Detracción celestial": {
+            "tipo": "objeto",
+            "unica": "apoyo"
+        },
+        "Tejesueños": {
+            "tipo": "objeto",
+            "unica": "apoyo"
+        },
+        "Perforaplanos de Zaz'Zak":{
+            "tipo": "objeto",
+            "unica": "apoyo"
+        },
+        "Trineo del solsticio":{
+            "tipo": "objeto",
+            "unica": "apoyo"
+        },
+        "Tonada sanguina":{
+            "tipo": "objeto",
+            "unica": "apoyo"
+        },
+        "Botas sibióticas":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Botas jonias de la lucidez":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Botas de rapidez":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Grebas de berserker":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Botas de hechicero":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Botas blindadas":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Botas de mercurio":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Robaalmas de Mejai":{
+            "tipo": "objeto",
+            "unica": "no"
+        },
+        "Lucidez carmesí":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Avance eterno":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Marcha veloz":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Grebas de metal":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Botas del lanzahechizos":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Avance blindado":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Trituradoras encadenadas":{
+            "tipo": "objeto/botas",
+            "unica": "no"
+        },
+        "Canción de batalla de Shurelya":{
+            "tipo": "objeto",
+            "unica": "no"
+        },
         "Convergencia de Zeke",
         "Medallón de los Solari de Hierro",
         "Incensario ardiente",
@@ -121,7 +184,7 @@ lista = {
         "Sanguinaria",
         "Filo infinito",
         "Sombrero mortal de Rabadon",
-    ],
+    },
     Iniciales: [
         "Poción de vida",
         "Poción reutilizable",

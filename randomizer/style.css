@@ -1,10 +1,28 @@
+
+.window::before {
+    margin-bottom: -6px;
+    flex: 0 0 auto;
+}
+.window::after {
+    margin-top: 16px;
+    flex: 0 0 auto;
+}
+.window .head {
+    height: 40px;
+    color: white;
+    flex: 0 0 auto;
+}
+
+
+/* EMPEZAR A CAMBIAR EL CUERPO AQUI */
+
 main > div  {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     padding: 8px;
     gap: 16px;
     background-color: #091428;
-    color: white;
+    color: white; */
 }
 main div div.campeon {
     display: block;
@@ -23,4 +41,24 @@ main div div.campeon img {
 }
 main div div.campeon img:hover {
     border: 2px solid #F0E6D2;
+}
+/* TERMINAR DE CAMBIAR EL CUERPO AQUI */
+
+
+
+
+.window .foot {
+    display: flex;
+    height: 32px;
+    flex: 0 0 auto;
+}
+.window .foot a {
+    color: white;
+    border: 1px solid white;
+    padding: 4px 16px;
+    height: 22px;
+}
+.window .foot a:hover {
+    color: #C89B3C;
+    border-color: #C89B3C;
 }

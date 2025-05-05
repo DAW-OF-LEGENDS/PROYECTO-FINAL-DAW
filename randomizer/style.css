@@ -16,31 +16,45 @@
 
 /* EMPEZAR A CAMBIAR EL CUERPO AQUI */
 
-main > div  {
-    /* display: flex;
-    flex-wrap: wrap;
-    padding: 8px;
-    gap: 16px;
-    background-color: #091428;
-    color: white; */
+.window .body {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
 }
+
 main div div.campeon {
     display: block;
-    margin: 16px;
+    margin: 0;
     width: 350px;
     border: 2px solid #C89B3C;
     height: 500px;
 }
+
+main div div.runas {
+    display: block;
+    width: 500px;
+    border: 2px solid #C89B3C;
+    height: 500px;
+    padding: 16px;
+    margin-left: 30px;
+    color: white;
+}
+
 main div div.campeon img {
     display: block;
     margin: 0;
-    width: 80%;
+    width: 100%;
     border: 2px solid #C89B3C;
-    height: 520px;
-    padding-left: 10px;
+    height: 500px;
 }
 main div div.campeon img:hover {
     border: 2px solid #F0E6D2;
+}
+main div div.campeon h2 {
+    color: #ffffff;
+}
+main div div.campeon p {
+    color: #ffffff;
 }
 /* TERMINAR DE CAMBIAR EL CUERPO AQUI */
 
@@ -50,6 +64,7 @@ main div div.campeon img:hover {
 .window .foot {
     display: flex;
     height: 32px;
+    margin-top: 15px;
     flex: 0 0 auto;
 }
 .window .foot a {

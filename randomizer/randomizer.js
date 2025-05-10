@@ -22,19 +22,18 @@ const campeones = [
  * DATOS: RUNAS EN ESPAÑOL (2025)
  */
 // Roles
-const roles = ["TOP", "JUNGLE", "MID", "ADC", "SUPPORT"];
+const roles = ["TOP", "JUNGLA", "MID", "ADC", "SUPPORT"];
 
 // Hechizos de invocador
 const hechizosInvocador = [
-    "FLASH", "IGNITE", "TELEPORT", "HEAL", "BARRIER", 
-    "EXHAUST", "GHOST", "CLEANSE", "SMITE", "HASTE"
+    "FLASH", "PRENDER", "TELEPORT", "CURAR", "BARRERA", 
+    "EXTENUACION", "FANTASMAL", "LIMPIAR", "SMITE"
 ];
 
 // Estructura de runas 2025 en español
 const runasData = {
     "Precision": {
         nombre: "Precisión",
-        color: "#ff9800",
         keystone: ["Ataque Intensificado", "Compás Letal", "Pies Veloces", "Conquistador"], 
         fila1: ["Absorber vida", "Triunfo", "Claridad Mental"], 
         fila2: ["Legenda: Presteza", "Legenda: Velocidad", "Legenda: Linaje"], 
@@ -42,7 +41,6 @@ const runasData = {
     },
     "Dominacion": {
         nombre: "Dominación",
-        color: "#f44336",
         keystone: ["Electrocutar", "Cosecha oscura", "Lluvia de cuchillas"], 
         fila1: ["Golpe bajo", "Sabor a sangre", "Impacto repentino"],
         fila2: ["Sexto sentido", "Recuerdo macabro", "Guardian de profundidad"],
@@ -50,7 +48,6 @@ const runasData = {
     },
     "Brujeria": {
         nombre: "Brujería",
-        color: "#2196f3",
         keystone: ["Invocar a Aery", "Cometa arcano", "Irrupcion de fase"],
         fila1: ["Arcanólogo axiomático", "Banda de maná", "Capa del nimbo"],
         fila2: ["Trascendencia", "Celeridad", "Concentración absoluta"],
@@ -58,7 +55,6 @@ const runasData = {
     },
     "Valor": {
         nombre: "Valor",
-        color: "#4caf50",
         keystone: ["Garras del inmortal", "Reverberacción", "Protector"],
         fila1: ["Demoler", "Fuente de vida", "Golpe de escudo"],
         fila2: ["Condicionamiento", "Fuerzas renovadas", "Revestimiento de huesos"],
@@ -66,7 +62,6 @@ const runasData = {
     },
     "Inspiracion": {
         nombre: "Inspiración",
-        color: "#cddc39",
         keystone: ["Mejora glacial", "Libro de hechizos", "Primer golpe"],
         fila1: ["Destello hextech", "Calzado mágico", "Reembolso"],
         fila2: ["Tónico triple", "Tónico de distorsión temporal", "Entrega de galletas"],
@@ -115,28 +110,23 @@ function actualizarCampeon() {
     // Añadir clase para efecto visual de carga
     const campeonDiv = document.querySelector('.campeon');
     const runasDiv = document.querySelector('.runas');
-    
+
     campeonDiv.classList.add('loading');
     if (runasDiv) runasDiv.classList.add('loading');
     
     // Pequeño timeout para hacer la animación visible
     setTimeout(() => {
+
         // Obtener campeón aleatorio
         const nombreCampeon = getCampeonAleatorio();
         
         // Actualizar imagen con manejo de errores
-        const imgElement = campeonDiv.querySelector('img');
-        imgElement.onerror = function() {
-            console.error(`Error: No se encontró imagen para ${nombreCampeon}`);
-            this.src = '../src/images/campeones/default.png';
-        };
-        
-        imgElement.src = `../src/images/campeones/${nombreCampeon}.png`;
-        imgElement.alt = nombreCampeon;
+        const imgPath = `url("../src/images/campeones/${nombreCampeon}.png")`;
+        console.log(imgPath)
+        campeonDiv.querySelector(".campeon").style.backgroundImage = `url("../src/images/campeones/${nombreCampeon}.png")`;
         
         // Actualizar nombre
-        const nombreElement = campeonDiv.querySelector('h2');
-        nombreElement.textContent = nombreCampeon;
+        campeonDiv.querySelector('h2').textContent = nombreCampeon;
         
         // Actualizar runas
         actualizarRunasSencillo();
@@ -171,62 +161,52 @@ function actualizarRunasSencillo() {
         
         if (todosLosPdeRunas.length >= 11) { // debe haber al menos 11 elementos
             // Actualizar rol (índice 0)
-            todosLosPdeRunas[0].textContent = getRandomElement(roles);
+            const rolElement = document.querySelector('#ROL');
+            rolElement.querySelectorAll('p')[0].textContent = getRandomElement(roles);
             
             // Actualizar hechizos (índices 1-2)
+            const hechizosElement = document.querySelector('#HECHIZOS');
             const hechizos = getRandomUniqueElements(hechizosInvocador, 2);
-            todosLosPdeRunas[1].textContent = hechizos[0];
-            todosLosPdeRunas[2].textContent = hechizos[1];
+            hechizosElement.querySelectorAll("img")[0].src = hechizos[0];            
+            hechizosElement.querySelectorAll("p")[0].textContent = hechizos[0];            
+            hechizosElement.querySelectorAll("img")[1].src = hechizos[1];            
+            hechizosElement.querySelectorAll("p")[1].textContent = hechizos[1];            
             
             // Seleccionar categoría primaria y actualizar (índices 3-6)
+            const runaPrimariaElement = document.querySelector('#RUNA-PRIMARIA');
             const catPrimaria = getRandomElement(Object.keys(runasData));
-            todosLosPdeRunas[3].textContent = getRandomElement(runasData[catPrimaria].keystone);
-            todosLosPdeRunas[4].textContent = getRandomElement(runasData[catPrimaria].fila1);
-            todosLosPdeRunas[5].textContent = getRandomElement(runasData[catPrimaria].fila2);
-            todosLosPdeRunas[6].textContent = getRandomElement(runasData[catPrimaria].fila3);
+            let keystone = getRandomElement(runasData[catPrimaria].keystone);
+            let runa1 = getRandomElement(runasData[catPrimaria].fila1);
+            let runa2 = getRandomElement(runasData[catPrimaria].fila2);
+            let runa3 = getRandomElement(runasData[catPrimaria].fila3);
+            runaPrimariaElement.querySelectorAll("img")[0].src = keystone;
+            runaPrimariaElement.querySelectorAll("p")[0].textContent = keystone;
+            runaPrimariaElement.querySelectorAll("img")[1].src = runa1;
+            runaPrimariaElement.querySelectorAll("p")[1].textContent = runa1;
+            runaPrimariaElement.querySelectorAll("img")[2].src = runa2;
+            runaPrimariaElement.querySelectorAll("p")[2].textContent = runa2;
+            runaPrimariaElement.querySelectorAll("img")[3].src = runa3;
+            runaPrimariaElement.querySelectorAll("p")[3].textContent = runa3;
             
-            // Actualizar título primaria
-            const tituloPrimarias = document.querySelector('.runa-seccion:nth-child(4) .runa-categoria:nth-child(1) h3');
-            if (tituloPrimarias) {
-                tituloPrimarias.textContent = runasData[catPrimaria].nombre.toUpperCase();
-                console.log("Título primarias actualizado:", tituloPrimarias.textContent);
-            }
-            
-            // Actualizar clase CSS primaria
-            const contenedorPrimarias = document.querySelector('.runa-seccion:nth-child(4) .runa-categoria:nth-child(1)');
-            if (contenedorPrimarias) {
-                // Eliminar todas las clases de categoría
-                Object.keys(runasData).forEach(cat => {
-                    contenedorPrimarias.classList.remove(cat.toLowerCase());
-                });
-                contenedorPrimarias.classList.add(catPrimaria.toLowerCase());
-                console.log("Clase añadida a primarias:", catPrimaria.toLowerCase());
-            }
+            // Eliminar todas las clases de categoría
+            runaPrimariaElement.setAttribute('class', 'runa-categoria '+catPrimaria.toLowerCase());
+            console.log("Clase añadida a primarias:", catPrimaria.toLowerCase());
             
             // Seleccionar categoría secundaria y actualizar (índices 7-8)
+            const runaSecundariaElement = document.querySelector('#RUNA-SECUNDARIA');
             const catDisponibles = Object.keys(runasData).filter(c => c !== catPrimaria);
             const catSecundaria = getRandomElement(catDisponibles);
             const filasSecundarias = getRandomUniqueElements(['fila1', 'fila2', 'fila3'], 2);
-            todosLosPdeRunas[7].textContent = getRandomElement(runasData[catSecundaria][filasSecundarias[0]]);
-            todosLosPdeRunas[8].textContent = getRandomElement(runasData[catSecundaria][filasSecundarias[1]]);
+            runa1 = getRandomElement(runasData[catSecundaria][filasSecundarias[0]]);
+            runa2 = getRandomElement(runasData[catSecundaria][filasSecundarias[1]]);
+            runaSecundariaElement.querySelectorAll("img")[0].src = runa1;
+            runaSecundariaElement.querySelectorAll("p")[0].textContent = runa1;
+            runaSecundariaElement.querySelectorAll("img")[1].src = runa2;
+            runaSecundariaElement.querySelectorAll("p")[1].textContent = runa2;
             
-            // Actualizar título secundaria
-            const tituloSecundarias = document.querySelector('.runa-seccion:nth-child(2) .runa-categoria:nth-child(2) h3');
-            if (tituloSecundarias) {
-                tituloSecundarias.textContent = runasData[catSecundaria].nombre.toUpperCase();
-                console.log("Título secundarias actualizado:", tituloSecundarias.textContent);
-            }
-            
-            // Actualizar clase CSS secundaria
-            const contenedorSecundarias = document.querySelector('.runa-seccion:nth-child(2) .runa-categoria:nth-child(2)');
-            if (contenedorSecundarias) {
-                // Eliminar todas las clases de categoría
-                Object.keys(runasData).forEach(cat => {
-                    contenedorSecundarias.classList.remove(cat.toLowerCase());
-                });
-                contenedorSecundarias.classList.add(catSecundaria.toLowerCase());
-                console.log("Clase añadida a secundarias:", catSecundaria.toLowerCase());
-            }
+            // Actualizar clase CSS de categoría
+            runaSecundariaElement.setAttribute('class', 'runa-categoria '+catSecundaria.toLowerCase());
+            console.log("Clase añadida a secundarias:", catSecundaria.toLowerCase());
             
             // Actualizar fragmentos (índices 9-11)
             todosLosPdeRunas[9].textContent = getRandomElement(fragmentosData.fila1);
@@ -279,36 +259,8 @@ function diagnosticarSelectores() {
 
 // Ejecutar diagnóstico cuando se cargue la página
 document.addEventListener('DOMContentLoaded', function() {
+    actualizarCampeon()
+    actualizarRunasSencillo();
     console.log("DOM cargado. Runas disponibles:", Object.keys(runasData));
     diagnosticarSelectores();
-    
-    // Agregar estilos dinámicamente para los nuevos árboles de runas
-    const estilosRunas = document.createElement('style');
-    estilosRunas.textContent = `
-        .brujeria {
-            border-color: #2196f3 !important;
-        }
-        .brujeria h3 {
-            color: #2196f3 !important;
-        }
-        
-        .valor {
-            border-color: #4caf50 !important;
-        }
-        .valor h3 {
-            color: #4caf50 !important;
-        }
-        
-        /* Estilos de depuración para ver mejor los cambios */
-        .runa-categoria {
-            transition: border-color 0.3s, background-color 0.3s;
-        }
-        
-        .runa-categoria.precision { background-color: rgba(255, 152, 0, 0.1); }
-        .runa-categoria.dominacion { background-color: rgba(244, 67, 54, 0.1); }
-        .runa-categoria.brujeria { background-color: rgba(33, 150, 243, 0.1); }
-        .runa-categoria.valor { background-color: rgba(76, 175, 80, 0.1); }
-        .runa-categoria.inspiracion { background-color: rgba(205, 220, 57, 0.1); }
-    `;
-    document.head.appendChild(estilosRunas);
 });

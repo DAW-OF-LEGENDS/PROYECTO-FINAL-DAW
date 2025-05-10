@@ -1,4 +1,3 @@
-
 .window::before {
     margin-bottom: -6px;
     flex: 0 0 auto;
@@ -166,4 +165,58 @@ main div div.campeon p {
 .window .foot a:hover {
     color: #C89B3C;
     border-color: #C89B3C;
+}
+
+/* Animaciones */
+.loading {
+    opacity: 0.6;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.transition-effect {
+    animation: fadeEffect 0.4s ease-out;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0.5; transform: scale(0.98); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Colores para los árboles de runas */
+.precision {
+    border-color: #ff9800 !important;
+}
+.precision h3 {
+    color: #ff9800 !important;
+}
+
+.dominacion {
+    border-color: #f44336 !important;
+}
+.dominacion h3 {
+    color: #f44336 !important;
+}
+
+/* Clases para Brujería */
+.brujeria {
+    border-color: #2196f3 !important;
+}
+.brujeria h3 {
+    color: #2196f3 !important;
+}
+
+/* Clases para Valor */
+.valor {
+    border-color: #4caf50 !important;
+}
+.valor h3 {
+    color: #4caf50 !important;
+}
+
+.inspiracion {
+    border-color: #cddc39 !important;
+}
+.inspiracion h3 {
+    color: #cddc39 !important;
 }

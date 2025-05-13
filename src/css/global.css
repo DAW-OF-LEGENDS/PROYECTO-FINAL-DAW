@@ -105,7 +105,7 @@ main {
 
 
 body.dark-mode::before  { background: radial-gradient(circle 256px at var(--background-cursor-pos), transparent 50%, rgba(  0,   0,   0, 0.500) 100%); }
-body.light-mode::before { background: radial-gradient(circle 256px at var(--background-cursor-pos), rgba(255, 255, 255, 0.125) 50%, transparent 100%); }
+body.light-mode::before { background: radial-gradient(circle 256px at var(--background-cursor-pos), rgba(100, 11, 11, 0.125) 50%, transparent 100%); }
 body.dark-mode  { background-image: url('../images/fondos/darkBackgroundImage.png');  }
 body.light-mode { background-image: url('../images/fondos/lightBackgroundImage.png'); }
 body.dark-mode  #theme-mode p::before { content: 'Modo Oscuro'; }

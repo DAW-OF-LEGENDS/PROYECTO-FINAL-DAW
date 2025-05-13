@@ -19,7 +19,7 @@
 }
 .window .body {
     display: flex;
-    width: calc(350px + 900px + 54px);
+    width: calc(350px + 1000px + 54px);
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 16px;

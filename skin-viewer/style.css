@@ -40,3 +40,56 @@
     color: #C89B3C;
     border-color: #C89B3C;
 }
+
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Lista de campeones */
+  .champion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Elemento individual de campeón */
+  .champion-list li {
+    background-color: #1e1e1e; /* Fondo oscuro más claro */
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagen del campeón */
+  .champion-list li img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    padding: 5px;
+  }
+  
+  /* Nombre del campeón */
+  .champion-list li span {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  /* Efecto hover */
+  .champion-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffcc;
+  }

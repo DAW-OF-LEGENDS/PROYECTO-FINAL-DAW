@@ -179,4 +179,39 @@ document.addEventListener('DOMContentLoaded', function() {
         'Zyra': []
     };
     
+    // Manejar clic en un campeón
+    championList.addEventListener('click', function(e) {
+        const listItem = e.target.closest('li');
+        if (!listItem) return;
+        
+        const championName = listItem.querySelector('span').textContent;
+        showSkins(championName);
+    });
+    
+    // Función para mostrar las skins
+    function showSkins(championName) {
+        const skins = championSkins[championName];
+        if (!skins) return;
+        
+        // Ocultar lista y mostrar viewer
+        container.style.display = 'none';
+        skinViewer.style.display = 'block';
+        
+        // Limpiar contenedor y añadir título
+        skinContainer.innerHTML = `<h2>Skins de ${championName}</h2>`;
+        
+        // Añadir cada skin
+        skins.forEach(skin => {
+            const skinImg = document.createElement('img');
+            skinImg.src = `../src/images/skins/${championName}/${skin}`;
+            skinImg.alt = `${championName} - ${skin}`;
+            skinContainer.appendChild(skinImg);
+        });
+    }
+    
+    // Manejar botón de volver
+    backButton.addEventListener('click', function() {
+        skinViewer.style.display = 'none';
+        container.style.display = 'block';
+    });
 });

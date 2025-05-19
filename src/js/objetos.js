@@ -1,808 +1,10 @@
-export class Objetos {
-    lista = {
-        finales: {
-            "Detracción celestial": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Tejesueños": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Perforaplanos de Zaz'Zak": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Trineo del solsticio": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Tonada sanguina": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Botas sibióticas": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Botas jonias de la lucidez": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Botas de rapidez": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Grebas de berserker": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Botas de hechicero": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Botas blindadas": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Botas de mercurio": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Robaalmas de Mejai": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Lucidez carmesí": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Avance eterno": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Marcha veloz": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Grebas de metal": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Botas del lanzahechizos": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Avance blindado": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Trituradoras encadenadas": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Canción de batalla de Shurelya": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Convergencia de Zeke": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Medallón de los Solari de Hierro": {
-                "tipo": "objeto",
-            },
-            "Incensario ardiente": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Renovación de piedra lunar": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Ecos de Helia": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Mandato imperial": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Bastón de aguas fluidas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Redención": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Promesa de caballero": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Bendición de Mikael": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Piedra de visión vigilante": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Marcasendas": {
-                "tipo": "objeto",
-                "unica": "no",
-            },
-            "Llegada del invierno": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Malla de espinas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Corazón de hielo": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Núcleo albar": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Colmillo de serpiente": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cetro de cristal de Rylai": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cintomisil hextech": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Guja sombría": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Vara de las edades": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Bailarín espectral": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Huracán de Runaan": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cañón de fuego rápido": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Filofugaz de Navori": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Máscara abisal": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Rostro espiritual": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Égida de fuego solar": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Puñal de Statikk": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Malignidad": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Presagio de Randuin": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Precisión infalible": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Oportunidades": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Desesperanza eterna": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Antorcha de fuego negro": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Final del ingenio": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Filo fantasmal de Youmuu": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Fuerza de la naturaleza": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Fulgor vano": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Florescecia sepulcral": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Compañera de Luden": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Rookern kaénico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Bastón del arcángel": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Manamune": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Segador de esencia": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Coraza del muerto": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Guantelete de hielo": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Eclipse": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Maldición sanguinolenta": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Renovación de piedra lunar": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Morellonomicón": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Soberbia": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Flechas de los Yun Tal": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cuchilla negra": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Experimento de hexarmadura": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Corazón de acero": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Velo del hada de la muerte": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Diente de Nashor": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hoja de furia de Guinsoo": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Bastón del vacío": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Rompecascos": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "El final": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Filo de la noche": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Impulso cósmico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Tormento de Liandry": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Arcoescudo inmortal": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Recaudadora": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Rencor de Seryida": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Arco axiomáico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Soberbia": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Espada ciclovoltaica": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Recuerdos de lord Dominik": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Armadura de Warmog": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Fauces de Malmortius": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Lanza de Shojin": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Creagrietas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Mecanoespada punki": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Firmamento desgarrado": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Verdugo de krakens": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Ángel de la guarda": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Calibrador de Sterak": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Perdición del liche": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cimitarra mercurial": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hoja del rey arruinado": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Llamasombría": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Jak'Sho el Proteico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hidra profana": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Reloj de arena de Zhonya": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Sangría del soberano": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Recordatorio letal": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hidra voraz": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hidra titánica": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Baile de la muerte": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cortasendas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Fuerza de trinidad": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Sanguinaria": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Filo infinito": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Sombrero mortal de Rabadon": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-        },
-        Iniciales: {
-            "Poción de vida": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Poción reutilizable": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Daga": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Mota brillante": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Botas": {
-                "tipo": "objeto/botas",
-                "unica": "no"
-            },
-            "Perla de rejuvenecimiento": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cristal de zafiro": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Armadura de tela": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Espada larga": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Sello oscuro": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cristal de rubí": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Manto de anulación de magia": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Anillo de Doran": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Lágrima de la diosa": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Atlas mundial": {
-                "tipo": "objeto",
-                "unica": "apoyo"
-            },
-            "Escudo de Doran": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Espada de Doran": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Preferencia": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cachorro de Garra ígnea": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cría de Caminabrisas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Brote de Brincamontes": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Elixir de hierro": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Elixir de brujería": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Elixir de cólera": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Capa de agilidad": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Ídolo prohibido": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Honda de explorador": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Arco curvo": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Réctrice": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Chaleco de cadenas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Armadura lunar alada": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Gema avivadora": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Chaleco de zarzas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Llamada del verdugo": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Brazal cristalino": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Orbe del olvido": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Vara explosiva": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Capa negatrón": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Códice diabólico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Pico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cinturón de gigante": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cetro vampírico": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cenizas predestinadas": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Broquel glacial": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Brillo": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Espejo de cristal de Bandle": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Rescoldo de Bami": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Cuerno del guardián": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Orbe del guardián": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Espada del guardián": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Martillo del guardián": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Malla del guardián": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Daga dentada": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Martillo de guerra de Caulfield": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Sello de acero": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Bacteriófago": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Protección de la legión": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Joya de la plaga": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Piedra de guardianes atenta": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Tuneladora": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Vara innecesariamente grande": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hacha hogareña": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Tiamat": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Fervor": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Capítulo perdido": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Hábito del espectro": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Espadón": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Fajín de mercurio": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Disfraz encantado": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Sorbemaleficios": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Catalizador de eones": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Carcaj del mediodía": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Embrutecedor": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Últimas palabras": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Brazalete de la buscadora": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-            "Barrera frondosa": {
-                "tipo": "objeto",
-                "unica": "no"
-            },
-
-        }
-    };
-}
-const _ = new Objetos().lista;
-let txt = "";
-for(const a in _){
-    for(const b in _[a]){
-        txt += (`"${b}": new Item("${b}", "${b}", "${a}", "${_[a][b].tipo}", "${_[a][b].unica}"),\n`)
-    }
-}
-console.log(txt)
-
-
 export class Item {
     nombreBase;
     nombre;
     categoria;
     tipo;
     unica;
-    constructor(nombreBase, nombre, categoria, tipo, unica){
+    constructor(nombreBase, nombre, categoria, tipo, unica) {
         this.nombreBase = nombreBase;
         this.nombre = nombre;
         this.categoria = categoria;
@@ -817,10 +19,202 @@ export const Items = {
     "TOMO AMPLIFICADOR": new Item("TOMO AMPLIFICADOR", "Tomo amplicador", "Inicial", "Objeto", "no"),
     "SOBRECARGA TORMENTOSA": new Item("SOBRECARGA TORMENTOSA", "Sobrecarga tormentosa", "Final", "Objeto", "no"),
     "BRISA DE ETER": new Item("BRISA DE ETER", "Brisa de éter", "Inicial", "Objeto", "no"),
-
+    "DETRACCION CELESTIAL": new Item("DETRACCION CELESTIAL", "Detraccion celestial", "finales", "objeto", "apoyo"),
+    "TEJESUEÑOS": new Item("TEJESUEÑOS", "Tejesueños", "finales", "objeto", "apoyo"),
+    "PERFORAPLANOS DE ZAZ'ZAK": new Item("PERFORAPLANOS DE ZAZ'ZAK", "Perforaplanos de Zaz'Zak", "finales", "objeto", "apoyo"),
+    "TRINEO DEL SOLSTICIO": new Item("TRINEO DEL SOLSTICIO", "Trineo del solsticio", "finales", "objeto", "apoyo"),
+    "TONADA SANGUINA": new Item("TONADA SANGUINA", "Tonada sanguina", "finales", "objeto", "apoyo"),
+    "BOTAS SIBIOTICAS": new Item("BOTAS SIBIOTICAS", "Botas sibioticas", "finales", "objeto/botas", "no"),
+    "BOTAS JONIAS DE LA LUCIDEZ": new Item("BOTAS JONIAS DE LA LUCIDEZ", "Botas jonias de la lucidez", "finales", "objeto/botas", "no"),
+    "BOTAS DE RAPIDEZ": new Item("BOTAS DE RAPIDEZ", "Botas de rapidez", "finales", "objeto/botas", "no"),
+    "GREBAS DE BERSERKER": new Item("GREBAS DE BERSERKER", "Grebas de berserker", "finales", "objeto/botas", "no"),
+    "BOTAS DE HECHICERO": new Item("BOTAS DE HECHICERO", "Botas de hechicero", "finales", "objeto/botas", "no"),
+    "BOTAS BLINDADAS": new Item("BOTAS BLINDADAS", "Botas blindadas", "finales", "objeto/botas", "no"),
+    "BOTAS DE MERCURIO": new Item("BOTAS DE MERCURIO", "Botas de mercurio", "finales", "objeto/botas", "no"),
+    "ROBAALMAS DE MEJAI": new Item("ROBAALMAS DE MEJAI", "Robaalmas de Mejai", "finales", "objeto", "no"),
+    "LUCIDEZ CARMESI": new Item("LUCIDEZ CARMESI", "Lucidez carmesi", "finales", "objeto/botas", "no"),
+    "AVANCE ETERNO": new Item("AVANCE ETERNO", "Avance eterno", "finales", "objeto/botas", "no"),
+    "MARCHA VELOZ": new Item("MARCHA VELOZ", "Marcha veloz", "finales", "objeto/botas", "no"),
+    "GREBAS DE METAL": new Item("GREBAS DE METAL", "Grebas de metal", "finales", "objeto/botas", "no"),
+    "BOTAS DEL LANZAHECHIZOS": new Item("BOTAS DEL LANZAHECHIZOS", "Botas del lanzahechizos", "finales", "objeto/botas", "no"),
+    "AVANCE BLINDADO": new Item("AVANCE BLINDADO", "Avance blindado", "finales", "objeto/botas", "no"),
+    "TRITURADORAS ENCADENADAS": new Item("TRITURADORAS ENCADENADAS", "Trituradoras encadenadas", "finales", "objeto/botas", "no"),
+    "CANCION DE BATALLA DE SHURELYA": new Item("CANCION DE BATALLA DE SHURELYA", "Cancion de batalla de Shurelya", "finales", "objeto", "no"),
+    "CONVERGENCIA DE ZEKE": new Item("CONVERGENCIA DE ZEKE", "Convergencia de Zeke", "finales", "objeto", "no"),
+    "MEDALLON DE LOS SOLARI DE HIERRO": new Item("MEDALLON DE LOS SOLARI DE HIERRO", "Medallon de los Solari de Hierro", "finales", "objeto", "undefined"),
+    "INCENSARIO ARDIENTE": new Item("INCENSARIO ARDIENTE", "Incensario ardiente", "finales", "objeto", "no"),
+    "RENOVACION DE PIEDRA LUNAR": new Item("RENOVACION DE PIEDRA LUNAR", "Renovacion de piedra lunar", "finales", "objeto", "no"),
+    "ECOS DE HELIA": new Item("ECOS DE HELIA", "Ecos de Helia", "finales", "objeto", "no"),
+    "MANDATO IMPERIAL": new Item("MANDATO IMPERIAL", "Mandato imperial", "finales", "objeto", "no"),
+    "BASTON DE AGUAS FLUIDAS": new Item("BASTON DE AGUAS FLUIDAS", "Baston de aguas fluidas", "finales", "objeto", "no"),
+    "REDENCION": new Item("REDENCION", "Redencion", "finales", "objeto", "no"),
+    "PROMESA DE CABALLERO": new Item("PROMESA DE CABALLERO", "Promesa de caballero", "finales", "objeto", "no"),
+    "BENDICION DE MIKAEL": new Item("BENDICION DE MIKAEL", "Bendicion de Mikael", "finales", "objeto", "no"),
+    "PIEDRA DE VISION VIGILANTE": new Item("PIEDRA DE VISION VIGILANTE", "Piedra de vision vigilante", "finales", "objeto", "apoyo"),
+    "MARCASENDAS": new Item("MARCASENDAS", "Marcasendas", "finales", "objeto", "no"),
+    "LLEGADA DEL INVIERNO": new Item("LLEGADA DEL INVIERNO", "Llegada del invierno", "finales", "objeto", "no"),
+    "MALLA DE ESPINAS": new Item("MALLA DE ESPINAS", "Malla de espinas", "finales", "objeto", "no"),
+    "CORAZON DE HIELO": new Item("CORAZON DE HIELO", "Corazon de hielo", "finales", "objeto", "no"),
+    "NUCLEO ALBAR": new Item("NUCLEO ALBAR", "Nucleo albar", "finales", "objeto", "no"),
+    "COLMILLO DE SERPIENTE": new Item("COLMILLO DE SERPIENTE", "Colmillo de serpiente", "finales", "objeto", "no"),
+    "CETRO DE CRISTAL DE RYLAI": new Item("CETRO DE CRISTAL DE RYLAI", "Cetro de cristal de Rylai", "finales", "objeto", "no"),
+    "CINTOMISIL HEXTECH": new Item("CINTOMISIL HEXTECH", "Cintomisil hextech", "finales", "objeto", "no"),
+    "GUJA SOMBRIA": new Item("GUJA SOMBRIA", "Guja sombria", "finales", "objeto", "no"),
+    "VARA DE LAS EDADES": new Item("VARA DE LAS EDADES", "Vara de las edades", "finales", "objeto", "no"),
+    "BAILARIN ESPECTRAL": new Item("BAILARIN ESPECTRAL", "Bailarin espectral", "finales", "objeto", "no"),
+    "HURACaN DE RUNAAN": new Item("HURACAN DE RUNAAN", "Huracan de Runaan", "finales", "objeto", "no"),
+    "CAÑON DE FUEGO RAPIDO": new Item("CAÑON DE FUEGO RAPIDO", "Cañon de fuego rapido", "finales", "objeto", "no"),
+    "FILOFUGAZ DE NAVORI": new Item("FILOFUGAZ DE NAVORI", "Filofugaz de Navori", "finales", "objeto", "no"),
+    "MASCARA ABISAL": new Item("MASCARA ABISAL", "Mascara abisal", "finales", "objeto", "no"),
+    "ROSTRO ESPIRITUAL": new Item("ROSTRO ESPIRITUAL", "Rostro espiritual", "finales", "objeto", "no"),
+    "EGIDA DE FUEGO SOLAR": new Item("EGIDA DE FUEGO SOLAR", "Egida de fuego solar", "finales", "objeto", "no"),
+    "PUÑAL DE STATIKK": new Item("PUÑAL DE STATIKK", "Puñal de Statikk", "finales", "objeto", "no"),
+    "MALIGNIDAD": new Item("MALIGNIDAD", "Malignidad", "finales", "objeto", "no"),
+    "PRESAGIO DE RANDUIN": new Item("PRESAGIO DE RANDUIN", "Presagio de Randuin", "finales", "objeto", "no"),
+    "PRECISION INFALIBLE": new Item("PRECISION INFALIBLE", "Precision infalible", "finales", "objeto", "no"),
+    "OPORTUNIDADES": new Item("OPORTUNIDADES", "Oportunidades", "finales", "objeto", "no"),
+    "DESESPERANZA ETERNA": new Item("DESESPERANZA ETERNA", "Desesperanza eterna", "finales", "objeto", "no"),
+    "ANTORCHA DE FUEGO NEGRO": new Item("ANTORCHA DE FUEGO NEGRO", "Antorcha de fuego negro", "finales", "objeto", "no"),
+    "FINAL DEL INGENIO": new Item("FINAL DEL INGENIO", "Final del ingenio", "finales", "objeto", "no"),
+    "FILO FANTASMAL DE YOUMUU": new Item("FILO FANTASMAL DE YOUMUU", "Filo fantasmal de Youmuu", "finales", "objeto", "no"),
+    "FUERZA DE LA NATURALEZA": new Item("FUERZA DE LA NATURALEZA", "Fuerza de la naturaleza", "finales", "objeto", "no"),
+    "FULGOR VANO": new Item("FULGOR VANO", "Fulgor vano", "finales", "objeto", "no"),
+    "FLORESCECIA SEPULCRAL": new Item("FLORESCECIA SEPULCRAL", "Florescecia sepulcral", "finales", "objeto", "no"),
+    "COMPAÑERA DE LUDEN": new Item("COMPAÑERA DE LUDEN", "Compañera de Luden", "finales", "objeto", "no"),
+    "ROOKERN KAENICO": new Item("ROOKERN KAENICO", "Rookern kaenico", "finales", "objeto", "no"),
+    "BASTON DEL ARCANGEL": new Item("BASTON DEL ARCANGEL", "Baston del arcangel", "finales", "objeto", "no"),
+    "MANAMUNE": new Item("MANAMUNE", "Manamune", "finales", "objeto", "no"),
+    "SEGADOR DE ESENCIA": new Item("SEGADOR DE ESENCIA", "Segador de esencia", "finales", "objeto", "no"),
+    "CORAZA DEL MUERTO": new Item("CORAZA DEL MUERTO", "Coraza del muerto", "finales", "objeto", "no"),
+    "GUANTELETE DE HIELO": new Item("GUANTELETE DE HIELO", "Guantelete de hielo", "finales", "objeto", "no"),
+    "ECLIPSE": new Item("ECLIPSE", "Eclipse", "finales", "objeto", "no"),
+    "MALDICION SANGUINOLENTA": new Item("MALDICION SANGUINOLENTA", "Maldicion sanguinolenta", "finales", "objeto", "no"),
+    "MORELLONOMICON": new Item("MORELLONOMICON", "Morellonomicon", "finales", "objeto", "no"),
+    "SOBERBIA": new Item("SOBERBIA", "Soberbia", "finales", "objeto", "no"),
+    "FLECHAS DE LOS YUN TAL": new Item("FLECHAS DE LOS YUN TAL", "Flechas de los Yun Tal", "finales", "objeto", "no"),
+    "CUCHILLA NEGRA": new Item("CUCHILLA NEGRA", "Cuchilla negra", "finales", "objeto", "no"),
+    "EXPERIMENTO DE HEXARMADURA": new Item("EXPERIMENTO DE HEXARMADURA", "Experimento de hexarmadura", "finales", "objeto", "no"),
+    "CORAZON DE ACERO": new Item("CORAZON DE ACERO", "Corazon de acero", "finales", "objeto", "no"),
+    "VELO DEL HADA DE LA MUERTE": new Item("VELO DEL HADA DE LA MUERTE", "Velo del hada de la muerte", "finales", "objeto", "no"),
+    "DIENTE DE NASHOR": new Item("DIENTE DE NASHOR", "Diente de Nashor", "finales", "objeto", "no"),
+    "HOJA DE FURIA DE GUINSOO": new Item("HOJA DE FURIA DE GUINSOO", "Hoja de furia de Guinsoo", "finales", "objeto", "no"),
+    "BASTON DEL VACIO": new Item("BASTON DEL VACIO", "Baston del vacio", "finales", "objeto", "no"),
+    "ROMPECASCOS": new Item("ROMPECASCOS", "Rompecascos", "finales", "objeto", "no"),
+    "EL FINAL": new Item("EL FINAL", "El final", "finales", "objeto", "no"),
+    "FILO DE LA NOCHE": new Item("FILO DE LA NOCHE", "Filo de la noche", "finales", "objeto", "no"),
+    "IMPULSO COSMICO": new Item("IMPULSO COSMICO", "Impulso cosmico", "finales", "objeto", "no"),
+    "TORMENTO DE LIANDRY": new Item("TORMENTO DE LIANDRY", "Tormento de Liandry", "finales", "objeto", "no"),
+    "ARCOESCUDO INMORTAL": new Item("ARCOESCUDO INMORTAL", "Arcoescudo inmortal", "finales", "objeto", "no"),
+    "RECAUDADORA": new Item("RECAUDADORA", "Recaudadora", "finales", "objeto", "no"),
+    "RENCOR DE SERYIDA": new Item("RENCOR DE SERYIDA", "Rencor de Seryida", "finales", "objeto", "no"),
+    "ARCO AXIOMAICO": new Item("ARCO AXIOMAICO", "Arco axiomaico", "finales", "objeto", "no"),
+    "ESPADA CICLOVOLTAICA": new Item("ESPADA CICLOVOLTAICA", "Espada ciclovoltaica", "finales", "objeto", "no"),
+    "RECUERDOS DE LORD DOMINIK": new Item("RECUERDOS DE LORD DOMINIK", "Recuerdos de lord Dominik", "finales", "objeto", "no"),
+    "ARMADURA DE WARMOG": new Item("ARMADURA DE WARMOG", "Armadura de Warmog", "finales", "objeto", "no"),
+    "FAUCES DE MALMORTIUS": new Item("FAUCES DE MALMORTIUS", "Fauces de Malmortius", "finales", "objeto", "no"),
+    "LANZA DE SHOJIN": new Item("LANZA DE SHOJIN", "Lanza de Shojin", "finales", "objeto", "no"),
+    "CREAGRIETAS": new Item("CREAGRIETAS", "Creagrietas", "finales", "objeto", "no"),
+    "MECANOESPADA PUNKI": new Item("MECANOESPADA PUNKI", "Mecanoespada punki", "finales", "objeto", "no"),
+    "FIRMAMENTO DESGARRADO": new Item("FIRMAMENTO DESGARRADO", "Firmamento desgarrado", "finales", "objeto", "no"),
+    "VERDUGO DE KRAKENS": new Item("VERDUGO DE KRAKENS", "Verdugo de krakens", "finales", "objeto", "no"),
+    "ANGEL DE LA GUARDA": new Item("ANGEL DE LA GUARDA", "Angel de la guarda", "finales", "objeto", "no"),
+    "CALIBRADOR DE STERAK": new Item("CALIBRADOR DE STERAK", "Calibrador de Sterak", "finales", "objeto", "no"),
+    "PERDICION DEL LICHE": new Item("PERDICION DEL LICHE", "Perdicion del liche", "finales", "objeto", "no"),
+    "CIMITARRA MERCURIAL": new Item("CIMITARRA MERCURIAL", "Cimitarra mercurial", "finales", "objeto", "no"),
+    "HOJA DEL REY ARRUINADO": new Item("HOJA DEL REY ARRUINADO", "Hoja del rey arruinado", "finales", "objeto", "no"),
+    "LLAMASOMBRIA": new Item("LLAMASOMBRIA", "Llamasombria", "finales", "objeto", "no"),
+    "JAK'SHO EL PROTEICO": new Item("JAK'SHO EL PROTEICO", "Jak'Sho el Proteico", "finales", "objeto", "no"),
+    "HIDRA PROFANA": new Item("HIDRA PROFANA", "Hidra profana", "finales", "objeto", "no"),
+    "RELOJ DE ARENA DE ZHONYA": new Item("RELOJ DE ARENA DE ZHONYA", "Reloj de arena de Zhonya", "finales", "objeto", "no"),
+    "SANGRIA DEL SOBERANO": new Item("SANGRIA DEL SOBERANO", "Sangria del soberano", "finales", "objeto", "no"),
+    "RECORDATORIO LETAL": new Item("RECORDATORIO LETAL", "Recordatorio letal", "finales", "objeto", "no"),
+    "HIDRA VORAZ": new Item("HIDRA VORAZ", "Hidra voraz", "finales", "objeto", "no"),
+    "HIDRA TITANICA": new Item("HIDRA TITANICA", "Hidra titanica", "finales", "objeto", "no"),
+    "BAILE DE LA MUERTE": new Item("BAILE DE LA MUERTE", "Baile de la muerte", "finales", "objeto", "no"),
+    "CORTASENDAS": new Item("CORTASENDAS", "Cortasendas", "finales", "objeto", "no"),
+    "FUERZA DE TRINIDAD": new Item("FUERZA DE TRINIDAD", "Fuerza de trinidad", "finales", "objeto", "no"),
+    "SANGUINARIA": new Item("SANGUINARIA", "Sanguinaria", "finales", "objeto", "no"),
+    "FILO INFINITO": new Item("FILO INFINITO", "Filo infinito", "finales", "objeto", "no"),
+    "SOMBRERO MORTAL DE RABADON": new Item("SOMBRERO MORTAL DE RABADON", "Sombrero mortal de Rabadon", "finales", "objeto", "no"),
+    "POCION DE VIDA": new Item("POCION DE VIDA", "Pocion de vida", "Iniciales", "objeto", "no"),
+    "POCION REUTILIZABLE": new Item("POCION REUTILIZABLE", "Pocion reutilizable", "Iniciales", "objeto", "no"),
+    "DAGA": new Item("DAGA", "Daga", "Iniciales", "objeto", "no"),
+    "MOTA BRILLANTE": new Item("MOTA BRILLANTE", "Mota brillante", "Iniciales", "objeto", "no"),
+    "BOTAS": new Item("BOTAS", "Botas", "Iniciales", "objeto/botas", "no"),
+    "PERLA DE REJUVENECIMIENTO": new Item("PERLA DE REJUVENECIMIENTO", "Perla de rejuvenecimiento", "Iniciales", "objeto", "no"),
+    "CRISTAL DE ZAFIRO": new Item("CRISTAL DE ZAFIRO", "Cristal de zafiro", "Iniciales", "objeto", "no"),
+    "ARMADURA DE TELA": new Item("ARMADURA DE TELA", "Armadura de tela", "Iniciales", "objeto", "no"),
+    "ESPADA LARGA": new Item("ESPADA LARGA", "Espada larga", "Iniciales", "objeto", "no"),
+    "SELLO OSCURO": new Item("SELLO OSCURO", "Sello oscuro", "Iniciales", "objeto", "no"),
+    "CRISTAL DE RUBI": new Item("CRISTAL DE RUBI", "Cristal de rubi", "Iniciales", "objeto", "no"),
+    "MANTO DE ANULACION DE MAGIA": new Item("MANTO DE ANULACION DE MAGIA", "Manto de anulacion de magia", "Iniciales", "objeto", "no"),
+    "ANILLO DE DORAN": new Item("ANILLO DE DORAN", "Anillo de Doran", "Iniciales", "objeto", "no"),
+    "LAGRIMA DE LA DIOSA": new Item("LAGRIMA DE LA DIOSA", "Lagrima de la diosa", "Iniciales", "objeto", "no"),
+    "ATLAS MUNDIAL": new Item("ATLAS MUNDIAL", "Atlas mundial", "Iniciales", "objeto", "apoyo"),
+    "ESCUDO DE DORAN": new Item("ESCUDO DE DORAN", "Escudo de Doran", "Iniciales", "objeto", "no"),
+    "ESPADA DE DORAN": new Item("ESPADA DE DORAN", "Espada de Doran", "Iniciales", "objeto", "no"),
+    "PREFERENCIA": new Item("PREFERENCIA", "Preferencia", "Iniciales", "objeto", "no"),
+    "CACHORRO DE GARRA IGNEA": new Item("CACHORRO DE GARRA IGNEA", "Cachorro de Garra ignea", "Iniciales", "objeto", "no"),
+    "CRIA DE CAMINABRISAS": new Item("CRIA DE CAMINABRISAS", "Cria de Caminabrisas", "Iniciales", "objeto", "no"),
+    "BROTE DE BRINCAMONTES": new Item("BROTE DE BRINCAMONTES", "Brote de Brincamontes", "Iniciales", "objeto", "no"),
+    "ELIXIR DE HIERRO": new Item("ELIXIR DE HIERRO", "Elixir de hierro", "Iniciales", "objeto", "no"),
+    "ELIXIR DE BRUJERIA": new Item("ELIXIR DE BRUJERIA", "Elixir de brujeria", "Iniciales", "objeto", "no"),
+    "ELIXIR DE COLERA": new Item("ELIXIR DE COLERA", "Elixir de colera", "Iniciales", "objeto", "no"),
+    "CAPA DE AGILIDAD": new Item("CAPA DE AGILIDAD", "Capa de agilidad", "Iniciales", "objeto", "no"),
+    "IDOLO PROHIBIDO": new Item("IDOLO PROHIBIDO", "Idolo prohibido", "Iniciales", "objeto", "no"),
+    "HONDA DE EXPLORADOR": new Item("HONDA DE EXPLORADOR", "Honda de explorador", "Iniciales", "objeto", "no"),
+    "ARCO CURVO": new Item("ARCO CURVO", "Arco curvo", "Iniciales", "objeto", "no"),
+    "RECTRICE": new Item("RECTRICE", "Rectrice", "Iniciales", "objeto", "no"),
+    "CHALECO DE CADENAS": new Item("CHALECO DE CADENAS", "Chaleco de cadenas", "Iniciales", "objeto", "no"),
+    "ARMADURA LUNAR ALADA": new Item("ARMADURA LUNAR ALADA", "Armadura lunar alada", "Iniciales", "objeto", "no"),
+    "GEMA AVIVADORA": new Item("GEMA AVIVADORA", "Gema avivadora", "Iniciales", "objeto", "no"),
+    "CHALECO DE ZARZAS": new Item("CHALECO DE ZARZAS", "Chaleco de zarzas", "Iniciales", "objeto", "no"),
+    "LLAMADA DEL VERDUGO": new Item("LLAMADA DEL VERDUGO", "Llamada del verdugo", "Iniciales", "objeto", "no"),
+    "BRAZAL CRISTALINO": new Item("BRAZAL CRISTALINO", "Brazal cristalino", "Iniciales", "objeto", "no"),
+    "ORBE DEL OLVIDO": new Item("ORBE DEL OLVIDO", "Orbe del olvido", "Iniciales", "objeto", "no"),
+    "VARA EXPLOSIVA": new Item("VARA EXPLOSIVA", "Vara explosiva", "Iniciales", "objeto", "no"),
+    "CAPA NEGATRON": new Item("CAPA NEGATRON", "Capa negatron", "Iniciales", "objeto", "no"),
+    "CODICE DIABOLICO": new Item("CODICE DIABOLICO", "Codice diabolico", "Iniciales", "objeto", "no"),
+    "PICO": new Item("PICO", "Pico", "Iniciales", "objeto", "no"),
+    "CINTURON DE GIGANTE": new Item("CINTURON DE GIGANTE", "Cinturon de gigante", "Iniciales", "objeto", "no"),
+    "CETRO VAMPIRICO": new Item("CETRO VAMPIRICO", "Cetro vampirico", "Iniciales", "objeto", "no"),
+    "CENIZAS PREDESTINADAS": new Item("CENIZAS PREDESTINADAS", "Cenizas predestinadas", "Iniciales", "objeto", "no"),
+    "BROQUEL GLACIAL": new Item("BROQUEL GLACIAL", "Broquel glacial", "Iniciales", "objeto", "no"),
+    "BRILLO": new Item("BRILLO", "Brillo", "Iniciales", "objeto", "no"),
+    "ESPEJO DE CRISTAL DE BANDLE": new Item("ESPEJO DE CRISTAL DE BANDLE", "Espejo de cristal de Bandle", "Iniciales", "objeto", "no"),
+    "RESCOLDO DE BAMI": new Item("RESCOLDO DE BAMI", "Rescoldo de Bami", "Iniciales", "objeto", "no"),
+    "CUERNO DEL GUARDIAN": new Item("CUERNO DEL GUARDIAN", "Cuerno del guardian", "Iniciales", "objeto", "no"),
+    "ORBE DEL GUARDIAN": new Item("ORBE DEL GUARDIAN", "Orbe del guardian", "Iniciales", "objeto", "no"),
+    "ESPADA DEL GUARDIAN": new Item("ESPADA DEL GUARDIAN", "Espada del guardian", "Iniciales", "objeto", "no"),
+    "MARTILLO DEL GUARDIAN": new Item("MARTILLO DEL GUARDIAN", "Martillo del guardian", "Iniciales", "objeto", "no"),
+    "MALLA DEL GUARDIAN": new Item("MALLA DEL GUARDIAN", "Malla del guardian", "Iniciales", "objeto", "no"),
+    "DAGA DENTADA": new Item("DAGA DENTADA", "Daga dentada", "Iniciales", "objeto", "no"),
+    "MARTILLO DE GUERRA DE CAULFIELD": new Item("MARTILLO DE GUERRA DE CAULFIELD", "Martillo de guerra de Caulfield", "Iniciales", "objeto", "no"),
+    "SELLO DE ACERO": new Item("SELLO DE ACERO", "Sello de acero", "Iniciales", "objeto", "no"),
+    "BACTERIOFAGO": new Item("BACTERIOFAGO", "Bacteriofago", "Iniciales", "objeto", "no"),
+    "PROTECCION DE LA LEGION": new Item("PROTECCION DE LA LEGION", "Proteccion de la legion", "Iniciales", "objeto", "no"),
+    "JOYA DE LA PLAGA": new Item("JOYA DE LA PLAGA", "Joya de la plaga", "Iniciales", "objeto", "no"),
+    "PIEDRA DE GUARDIANES ATENTA": new Item("PIEDRA DE GUARDIANES ATENTA", "Piedra de guardianes atenta", "Iniciales", "objeto", "no"),
+    "TUNELADORA": new Item("TUNELADORA", "Tuneladora", "Iniciales", "objeto", "no"),
+    "VARA INNECESARIAMENTE GRANDE": new Item("VARA INNECESARIAMENTE GRANDE", "Vara innecesariamente grande", "Iniciales", "objeto", "no"),
+    "HACHA HOGAREÑA": new Item("HACHA HOGAREÑA", "Hacha hogareña", "Iniciales", "objeto", "no"),
+    "TIAMAT": new Item("TIAMAT", "Tiamat", "Iniciales", "objeto", "no"),
+    "FERVOR": new Item("FERVOR", "Fervor", "Iniciales", "objeto", "no"),
+    "CAPITULO PERDIDO": new Item("CAPITULO PERDIDO", "Capitulo perdido", "Iniciales", "objeto", "no"),
+    "HABITO DEL ESPECTRO": new Item("HABITO DEL ESPECTRO", "Habito del espectro", "Iniciales", "objeto", "no"),
+    "ESPADON": new Item("ESPADON", "Espadon", "Iniciales", "objeto", "no"),
+    "FAJIN DE MERCURIO": new Item("FAJIN DE MERCURIO", "Fajin de mercurio", "Iniciales", "objeto", "no"),
+    "DISFRAZ ENCANTADO": new Item("DISFRAZ ENCANTADO", "Disfraz encantado", "Iniciales", "objeto", "no"),
+    "SORBEMALEFICIOS": new Item("SORBEMALEFICIOS", "Sorbemaleficios", "Iniciales", "objeto", "no"),
+    "CATALIZADOR DE EONES": new Item("CATALIZADOR DE EONES", "Catalizador de eones", "Iniciales", "objeto", "no"),
+    "CARCAJ DEL MEDIODIA": new Item("CARCAJ DEL MEDIODIA", "Carcaj del mediodia", "Iniciales", "objeto", "no"),
+    "EMBRUTECEDOR": new Item("EMBRUTECEDOR", "Embrutecedor", "Iniciales", "objeto", "no"),
+    "ULTIMAS PALABRAS": new Item("ULTIMAS PALABRAS", "Ultimas palabras", "Iniciales", "objeto", "no"),
+    "BRAZALETE DE LA BUSCADORA": new Item("BRAZALETE DE LA BUSCADORA", "Brazalete de la buscadora", "Iniciales", "objeto", "no"),
+    "BARRERA FRONDOSA": new Item("BARRERA FRONDOSA", "Barrera frondosa", "Iniciales", "objeto", "no"),
     "GUARADIAN DE CONTROL": new Item("GUARADIAN DE CONTROL", "Guardian de control", "ward", "no"),
     "GUARADIAN INVISIBLE": new Item("GUARADIAN INVISIBLE", "GUARADIAN INVISIBLE", "ward", "no"),
     "VISION LEJANA MODIFICADA": new Item("VISION LEJANA MODIFICADA", "VISION LEJANA MODIFICADA", "ward", "no"),
     "LENTE DEL ORACULO": new Item("LENTE DEL ORACULO", "LENTE DEL ORACULO", "ward", "no")
 }
-    
+

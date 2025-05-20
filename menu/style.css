@@ -1,12 +1,13 @@
-
 .window .body a {
     color: #ffffff;
     display: flex;
 }
+
 .window .body a:hover {
     color: #C89B3C;
     margin-left: -16px;
 }
+
 .window .body a:hover::before {
     content: '>';
     width: 16px;
@@ -15,4 +16,26 @@
     display: block;
 }
 
+.body {
+    position: relative;
+    padding: 20px;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 1;
+}
 
+.body::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background-image: url(../src/images/fondos/fondoGrietaInvocador.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 65%, transparent 80%);
+    mask-image: radial-gradient(ellipse at center, black 40%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 65%, transparent 80%);
+    filter: blur(3px);
+    z-index: -1;
+}

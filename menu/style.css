@@ -39,3 +39,11 @@
     filter: blur(3px);
     z-index: -1;
 }
+
+.body a {
+    position: relative;
+    z-index: 2;
+}
+.window {
+    background-color: transparent;
+}

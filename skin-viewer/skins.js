@@ -1,228 +1,230 @@
-document.addEventListener('DOMContentLoaded', function() {
-const championList = document.querySelector('.champion-list');
-const container = document.querySelector('.container');
-const skinViewer = document.querySelector('.skin-viewer');
-const skinContainer = document.querySelector('.skin-container');
-const backButton = document.querySelector('.back-button');
-    
-    // Mapeo de campeones a sus skins (ajusta esto con tus rutas reales)
-    
-    const championSkins = {
-    'Aatrox': ['aatrox_justicar.jpg',
-        'aatrox_mecha.jpg',
-         'aatrox_sea_hunter.jpg'],
+document.addEventListener('DOMContentLoaded', function () {
+	const championList = document.querySelector('.champion-list');
+	const container = document.querySelector('.container');
+	const skinViewer = document.querySelector('.skin-viewer');
+	const skinContainer = document.querySelector('.skin-container');
+	const backButton = document.querySelector('.back-button');
 
-    'Ahri': ['ahri_dynasty.jpg',
-         'ahri_midnight.jpg'],
+	// Mapeo de campeones a sus skins (ajusta esto con tus rutas reales)
 
-    'Akali': ['akali_infernal.jpg',
-         'akali_stinger.jpg'],
+	const championSkins = {
+		'Aatrox': ['aatrox_justicar.jpg',
+			'aatrox_mecha.jpg',
+			'aatrox_sea_hunter.jpg'],
 
-    'Akshan': ['akshan_crystal_rose.jpg',
-         'akshan_cyber_pop.jpg'],
+		'Ahri': ['ahri_dynasty.jpg',
+			'ahri_midnight.jpg'],
 
-    'Alistar': ['alistar_golden.jpg',
-         'alistar_matador.jpg'],
+		'Akali': ['akali_infernal.jpg',
+			'akali_stinger.jpg'],
 
-    'Ambessa': ['ambessa_chosen_of_the_wolf.jpg'],
+		'Akshan': ['akshan_crystal_rose.jpg',
+			'akshan_cyber_pop.jpg'],
 
-    'Amumu': ['amumu_pharaoh.jpg',
-         'amumu_re_gifted.jpg'],
+		'Alistar': ['alistar_golden.jpg',
+			'alistar_matador.jpg'],
 
-    'Anivia': ['anivia_bird_of_prey.jpg',
-         'anivia_team_spirit.jpg'],
+		'Ambessa': ['ambessa_chosen_of_the_wolf.jpg'],
 
-    'Annie': ['annie_goth.jpg',
-         'annie_red_riding.jpg'],
+		'Amumu': ['amumu_pharaoh.jpg',
+			'amumu_re_gifted.jpg'],
 
-    'Aphelios': ['aphelios_lunar_beast.jpg',
-         'aphelios_nightbringer.jpg'],
+		'Anivia': ['anivia_bird_of_prey.jpg',
+			'anivia_team_spirit.jpg'],
 
-    'Ashe': ['ashe_freljord.jpg',
-         'ashe_sherwood.jpg'],
+		'Annie': ['annie_goth.jpg',
+			'annie_red_riding.jpg'],
 
-    'Aurelion Sol': ['aurelion_sol_ashen_lord.jpg',
-         'aurelion_sol_mecha.jpg'],
+		'Aphelios': ['aphelios_lunar_beast.jpg',
+			'aphelios_nightbringer.jpg'],
 
-    'Aurora': ['aurora_battle_bunny.jpg'],
+		'Ashe': ['ashe_freljord.jpg',
+			'ashe_sherwood.jpg'],
 
-    'Azir': ['azir_galactic.jpg',
-         'azir_gravelord.jpg'],
+		'Aurelion Sol': ['aurelion_sol_ashen_lord.jpg',
+			'aurelion_sol_mecha.jpg'],
 
-    'Bardo': ['bard_elderwood.jpg',
-         'bard_snow_day.jpg'],
+		'Aurora': ['aurora_battle_bunny.jpg'],
 
-    'Bel\'Veth': ['bel\'veth_battle_boss.jpg',
-         'bel\'veth_cosmic_matriarch.jpg'],
+		'Azir': ['azir_galactic.jpg',
+			'azir_gravelord.jpg'],
 
-    'Blitzcrank': ['blitzcrank_goalkeeper.jpg',
-         'blitzcrank_rusty.jpg'],
+		'Bardo': ['bard_elderwood.jpg',
+			'bard_snow_day.jpg'],
 
-    'Brand': ['brand_apocalyptic.jpg',
-         'brand_vandal.jpg'],
+		'Bel\'Veth': ['bel\'veth_battle_boss.jpg',
+			'bel\'veth_cosmic_matriarch.jpg'],
 
-    'Braum': ['braum_dragonslayer.jpg',
+		'Blitzcrank': ['blitzcrank_goalkeeper.jpg',
+			'blitzcrank_rusty.jpg'],
 
-         'braum_el_tigre.jpg'],
-         
-    'Briar': ['briar_primordian.jpg',
-         'briar_street_demons.jpg'],
+		'Brand': ['brand_apocalyptic.jpg',
+			'brand_vandal.jpg'],
 
-    'Caitlyn': ['caitlyn_resistance.jpg',
-         'caitlyn_sheriff.jpg'],
+		'Braum': ['braum_dragonslayer.jpg',
 
-    'Camille': ['camille_coven.jpg',
-         'camille_program.jpg'],
+			'braum_el_tigre.jpg'],
 
-    'Cassiopeia': ['cassiopeia_desperada.jpg',
-         'cassiopeia_siren.jpg'],
+		'Briar': ['briar_primordian.jpg',
+			'briar_street_demons.jpg'],
 
-    'Cho\'Gath': ['cho\'gath_gentleman.jpg',
-         'cho\'gath_nightmare.jpg'],
+		'Caitlyn': ['caitlyn_resistance.jpg',
+			'caitlyn_sheriff.jpg'],
 
-    'Corki': ['corki_ice_toboggan.jpg',
-         'corki_ufo.jpg'],
+		'Camille': ['camille_coven.jpg',
+			'camille_program.jpg'],
 
-    'Darius': ['darius_bioforge.jpg',
-         'darius_lord.jpg'],
+		'Cassiopeia': ['cassiopeia_desperada.jpg',
+			'cassiopeia_siren.jpg'],
 
-    'Diana': ['diana_dark_valkyrie.jpg',
-         'diana_lunar_goddess.jpg'],
+		'Cho\'Gath': ['cho\'gath_gentleman.jpg',
+			'cho\'gath_nightmare.jpg'],
 
-    'Draven': ['draven_gladiator.jpg',
-         'draven_soul_reaver.jpg'],
+		'Corki': ['corki_ice_toboggan.jpg',
+			'corki_ufo.jpg'],
 
-    'Ekko': ['ekko_academy.jpg',
-         'ekko_sandstorm.jpg'],
+		'Darius': ['darius_bioforge.jpg',
+			'darius_lord.jpg'],
 
-    'Elise': ['elise_death_blossom.jpg',
-         'elise_victorious.jpg'],
+		'Diana': ['diana_dark_valkyrie.jpg',
+			'diana_lunar_goddess.jpg'],
 
-    'Evelynn': ['evelynn_masquerade.jpg',
-         'evelynn_shadow.jpg'],
+		'Draven': ['draven_gladiator.jpg',
+			'draven_soul_reaver.jpg'],
 
-    'Ezreal': ['ezreal_nottingham.jpg',
-         'ezreal_striker.jpg'],
+		'Ekko': ['ekko_academy.jpg',
+			'ekko_sandstorm.jpg'],
 
-    'Fiddlesticks': ['fiddlesticks_spectral.jpg',
-         'fiddlesticks_union_jack.jpg'],
+		'Elise': ['elise_death_blossom.jpg',
+			'elise_victorious.jpg'],
 
-    'Fiora': ['fiora_nightraven.jpg',
-         'fiora_royal_guard.jpg'],
+		'Evelynn': ['evelynn_masquerade.jpg',
+			'evelynn_shadow.jpg'],
 
-    'Fizz': ['fizz_atlantean.jpg',
-         'fizz_tundra.jpg'],
+		'Ezreal': ['ezreal_nottingham.jpg',
+			'ezreal_striker.jpg'],
 
-    'Galio': ['galio_enchanted.jpg',
-         'galio_hextech.jpg'],
+		'Fiddlesticks': ['fiddlesticks_spectral.jpg',
+			'fiddlesticks_union_jack.jpg'],
 
-    'Gangplank': ['gangplank_minuteman.jpg',
-         'gangplank_spooky.jpg'],
+		'Fiora': ['fiora_nightraven.jpg',
+			'fiora_royal_guard.jpg'],
 
-    'Garen': ['garen_desert_trooper.jpg',
-         'garen_sanguine.jpg'],
+		'Fizz': ['fizz_atlantean.jpg',
+			'fizz_tundra.jpg'],
 
-    'Gnar': ['gnar_dino.jpg',
-         'gnar_gentleman.jpg'],
+		'Galio': ['galio_enchanted.jpg',
+			'galio_hextech.jpg'],
 
-    'Gragas': ['gragas_hillbilly.jpg',
-         'gragas_scuba.jpg'],
+		'Gangplank': ['gangplank_minuteman.jpg',
+			'gangplank_spooky.jpg'],
 
-    'Graves': ['graves_hired_gun.jpg',
-         'graves_jailbreak.jpg'],
+		'Garen': ['garen_desert_trooper.jpg',
+			'garen_sanguine.jpg'],
 
-    'Gwen': ['gwen_cafe_cuties.jpg',
-         'gwen_space_groove.jpg'],
+		'Gnar': ['gnar_dino.jpg',
+			'gnar_gentleman.jpg'],
 
-    'Hecarim': ['hecarim_blood_knight.jpg',
-         'hecarim_reaper.jpg'],
+		'Gragas': ['gragas_hillbilly.jpg',
+			'gragas_scuba.jpg'],
 
-    'Heimerdinger': ['heimerdinger_alien_invader.jpg',
-         'heimerdinger_blast_zone.jpg'],
+		'Graves': ['graves_hired_gun.jpg',
+			'graves_jailbreak.jpg'],
 
-    'Hwei': ['hwei_winterblessed.jpg'],
+		'Gwen': ['gwen_cafe_cuties.jpg',
+			'gwen_space_groove.jpg'],
 
-    'Ivern': ['ivern_candy_king.jpg',
-         'ivern_dunkmaster.jpg'],
+		'Hecarim': ['hecarim_blood_knight.jpg',
+			'hecarim_reaper.jpg'],
 
-    'Janna': ['janna_hextech.jpg',
-         'janna_tempest.jpg'],
+		'Heimerdinger': ['heimerdinger_alien_invader.jpg',
+			'heimerdinger_blast_zone.jpg'],
 
-    'Jarvan IV': ['jarvan_iv_commando.jpg',
-         'jarvan_iv_dragonslayer.jpg'],
+		'Hwei': ['hwei_winterblessed.jpg'],
 
-    'Jax': ['jax_the_mighty.jpg',
-         'jax_vandal.jpg'],
+		'Ivern': ['ivern_candy_king.jpg',
+			'ivern_dunkmaster.jpg'],
 
-    'Jayce': ['jayce_debonair.jpg',
-         'jayce_full_metal.jpg'],
+		'Janna': ['janna_hextech.jpg',
+			'janna_tempest.jpg'],
 
-    'Jhin': ['jhin_blood_moon.jpg',
-         'jhin_high_noon.jpg'],
+		'Jarvan IV': ['jarvan_iv_commando.jpg',
+			'jarvan_iv_dragonslayer.jpg'],
 
-    'Jinx': ['jinx_crime_city.jpg',
-         'jinx_firecracker.jpg'],
+		'Jax': ['jax_the_mighty.jpg',
+			'jax_vandal.jpg'],
 
-    'K\'Sante': ['k\'sante_empyrean.jpg',
-         'k\'sante_prestige_empyrean.jpg'],
+		'Jayce': ['jayce_debonair.jpg',
+			'jayce_full_metal.jpg'],
 
-    'Kai\'Sa': ['kai\'sa_bullet_angel.jpg',
-         'kai\'sa_k_da.jpg'],
+		'Jhin': ['jhin_blood_moon.jpg',
+			'jhin_high_noon.jpg'],
 
-    'Kalista': ['kalista_blood_moon.jpg',
-         'kalista_worlds_2015.jpg'],
+		'Jinx': ['jinx_crime_city.jpg',
+			'jinx_firecracker.jpg'],
 
-    'Karma': ['karma_sakura.jpg',
-         'karma_sun_goddess.jpg'],
+		'K\'Sante': ['k\'sante_empyrean.jpg',
+			'k\'sante_prestige_empyrean.jpg'],
 
-    'Karthus': ['karthus_phantom.jpg',
-         'karthus_statue_of.jpg']
-    };
-    
-    
-    // Manejar clic en un campeón
-    championList.addEventListener('click', function(e) {
-        const listItem = e.target.closest('li');
-        if (!listItem) return;
-        
-        const championName = listItem.querySelector('span').textContent;
-        showSkins(championName);
-    });
-    
-    // Función para mostrar las skins
-    function showSkins(championName) {
-    const skins = championSkins[championName];
-    if (!skins || skins.length === 0) {
-        alert(`No hay skins disponibles para ${championName}`);
-        return;
-    }
-    
-    container.style.display = 'none';
-    skinViewer.style.display = 'block';
-    skinContainer.innerHTML = `<h2>SKINS DE ${championName.toUpperCase()}</h2>`;
-    
-    skins.forEach(skin => {
-        const skinDiv = document.createElement('div');
-        skinDiv.className = 'skin-item';
-        
-        const skinImg = document.createElement('img');
-        // Ruta corregida:
-        skinImg.src = `../src/images/skin/${skin}`;
-        skinImg.alt = `${championName} - ${skin.replace('.jpg', '').replace(/_/g, ' ')}`;
-        
-        const skinName = document.createElement('p');
-        skinName.textContent = skin.replace('.jpg', '').replace(/_/g, ' ');
-        
-        skinDiv.appendChild(skinImg);
-        skinDiv.appendChild(skinName);
-        skinContainer.appendChild(skinDiv);
-    });
-}
-    
-    // Manejar botón de volver
-    backButton.addEventListener('click', function() {
-        skinViewer.style.display = 'none';
-        container.style.display = 'block';
-        skinContainer.innerHTML = ''; // Limpiar las skins al volver
-    });
+		'Kai\'Sa': ['kai\'sa_bullet_angel.jpg',
+			'kai\'sa_k_da.jpg'],
+
+		'Kalista': ['kalista_blood_moon.jpg',
+			'kalista_worlds_2015.jpg'],
+
+		'Karma': ['karma_sakura.jpg',
+			'karma_sun_goddess.jpg'],
+
+		'Karthus': ['karthus_phantom.jpg',
+			'karthus_statue_of.jpg']
+	};
+
+
+	// Manejar clic en un campeón
+	championList.addEventListener('click', function (e) {
+		const listItem = e.target.closest('li');
+		if (!listItem) return;
+
+		const championName = listItem.querySelector('span').textContent;
+		showSkins(championName);
+	});
+
+	// Función para mostrar las skins
+	function showSkins(championName) {
+		const skins = championSkins[championName];
+		if (!skins || skins.length === 0) {
+			alert(`No hay skins disponibles para ${championName}`);
+			return;
+		}
+
+		container.style.display = 'none';
+		skinViewer.style.display = 'block';
+		document.querySelector("body main .head h1").textContent = `SKIN VIEWER - ${championName.toUpperCase()}`;
+
+		skins.forEach(skin => {
+			const skinDiv = document.createElement('div');
+			skinDiv.className = 'skin-item';
+
+			const skinImg = document.createElement('img');
+			// Ruta corregida:
+			skinImg.src = `../src/images/skin/${skin}`;
+			skinImg.alt = `${championName} - ${skin.replace('.jpg', '').replace(/_/g, ' ')}`;
+
+			const skinName = document.createElement('p');
+			skinName.textContent = skin.replace('.jpg', '').replace(/_/g, ' ');
+
+			skinDiv.appendChild(skinImg);
+			skinDiv.appendChild(skinName);
+			skinContainer.appendChild(skinDiv);
+		});
+	}
+
+	// Manejar botón de volver
+	backButton.addEventListener('click', function () {
+		skinViewer.style.display = 'none';
+		container.style.display = 'block';
+		skinContainer.innerHTML = ''; // Limpiar las skins al volver
+		document.querySelector("body main .head h1").textContent = `SKIN VIEWER`;
+
+	});
 });

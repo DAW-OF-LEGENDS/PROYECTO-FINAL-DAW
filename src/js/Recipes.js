@@ -28,7 +28,17 @@ export const Recipes = [
     new Recipe(Items["ROBAALMAS DE MEJAI"], [Items["SELLO OSCURO"]]),
     new Recipe(Items["SOBRECARGA TORMENTOSA"], [Items["ALTERNADOR HEXTECK"], Items["BRISA DE ETER"]]),
     new Recipe(Items["SUELAS SIMBIOTICAS"], [Items["BOTAS"]]),
-    new Recipe(Items["TUNELADORA"], [Items["ESPADA LARGA"], Items["CRISTAL DE RUBI"]]),    
+    new Recipe(Items["TUNELADORA"], [Items["ESPADA LARGA"], Items["CRISTAL DE RUBI"]]),
+    new Recipe(Items["BLINDAJE AVANZADO"], [Items["BOTAS BLINDADAS"]]),
+    new Recipe(Items["BOTAS BLINDADAS"], [Items["BOTAS"], Items["ARAMDURA DE TELA"]]),
+    new Recipe(Items["GREBAS DE BERSERKER"], [Items["BOTAS"], Items["DAGA"]]),
+    new Recipe(Items["TUNELADORA"], [Items["ESPADA LARGA"], Items["CRISTAL DE RUBI"]]),
+    new Recipe(Items["BOTAS DE RAPIDEZ"], [Items["BOTAS"]]),  
+    new Recipe(Items["TRITURADORAS_ENCADENADAS"], [Items["BOTAS DE MERCURIO"]]),
+    new Recipe(Items["BOTAS DE MERCURIO"], [Items["BOTAS"], Items["MANTO DE ANULACION DE MAGIA"]]), 
+    new Recipe(Items["BOTAS DE HECHIZERO"], [Items["BOTAS"]]),
+    new Recipe(Items["BOTAS DEL LANZAHECHIZOS"], [Items["BOTAS DE HECHIZERO"]]), 
+    new Recipe(Items["MARCHA VELOZ"], [Items["BOTAS DE RAPIDEZ"]]), 
 ]
 
 export function findRecipeByResult(item){

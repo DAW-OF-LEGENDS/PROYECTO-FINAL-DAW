@@ -35,77 +35,117 @@ body::before {
 main {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 4vmin;
     width: 100%;
     height: 100%;
-    max-width: calc(100% - 32px);
-    max-height: calc(100% - 32px);
+    max-width: calc(100% - 4vmin * 2);
+    max-height: calc(100% - 4vmin * 2);
     align-items: center;
     justify-content: center;
 }
 .window {
     background: linear-gradient(45deg, #091428, #0F1428);
-    padding: 32px;
-    border: 2px solid #C89B3C;
+    padding: 3vmin;
+    height: 100vmin;
+    aspect-ratio: 16/9;
+    border-radius: 1vmin;
+    max-width: calc(100vw - 3vmin * 4);
+    max-height: calc((100vw - 3vmin * 4) * 9 / 16);
+    border: 0.5vmin solid #C89B3C;
 }
 .window::before {
     content: 'x';
     display: block;
     color: #C89B3C;
     background: linear-gradient(45deg, #091428, #0A1428);
-    width: 32px;
-    height: 32px;
-    border: 2px solid #C89B3C;
-    margin-top: calc(-18px - 16px - 12px);
-    margin-left: calc(100% - 2px + 12px);
-    margin-bottom: 10px;
+    width: 4vmin;
+    height: 4vmin;
+    border: 0.5vmin solid #C89B3C;
+    margin-top: calc(-2vmin - 3.5vmin);
+    margin-left: calc(100% - 2.25vmin + 3vmin);
+    margin-bottom: 3vmin;
     border-radius: 100%;
     text-align: center;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 3vmin;
+    line-height: 3vmin;
 }
 .window::after {
     content: '';
     display: block;
     width: 100%;
-    border: 2px solid #C89B3C;
-    height: 2px;
-    border-radius: 0 0 8px 8px;
-    margin-top: 32px;
-    margin-bottom: -38px;
+    border: 0.5vmin solid #C89B3C;
+    height: 1vmin;
+    border-radius: 0 0 2vmin 2vmin;
+    margin-top: 3.675vmin;
 }
-
-
+.window .head {
+    color: #C89B3C;
+    margin-top: -2vmin;
+    margin-bottom: 3vmin;
+}
+.window .head h1 {
+    height: 6vmin;
+    font-size: 6vmin;
+    line-height: 6vmin;
+}
+.window .body {
+    height: 100%;
+    max-height: calc(100% - 6vmin - 3vmin - 8vmin - 1vmin);
+    /* background-color: green; */
+}
+.window .foot {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vmin;
+    height: 5vmin;
+}
+.window .foot a {
+    color: white;
+    height: 3vmin;
+    font-size: 3vmin;
+    line-height: 3vmin;
+    border: 0.25vmin solid white;
+    display: block;
+    border-radius: 1vmin;
+    padding: 0.875vmin 4vmin;
+}
+.window .foot a:hover {
+    color: #C89B3C;
+    border-color: #C89B3C;
+}
 #theme-mode {
     position: absolute;
     bottom: 0;
     right: 0;
     display: flex;
-    padding: 16px;
-    gap: 16px;
+    padding: 2vmin;
+    gap: 2vmin;
     align-items: center;
     color: white;
     font-weight: bold;
-    text-shadow: 0px 0px 4px black;
+    text-shadow: 0px 0px 2vmin black;
 }
 #theme-mode p {
-    font-size: 20px;
+    display: none;
+    font-size: 2.5vmin;
 }
 #theme-mode img {
-    width:  32px;
-    height: 32px;
-    border: 2px solid white;
+    width:  4vmin;
+    height: 4vmin;
+    border: 0.25vmin solid white;
+    border-radius: 1vmin;
     background-size: cover;
     background-position: center;
 }
 #theme-mode img:hover {
-    width: 40px;
-    height: 40px;
+    width: 4vmin;
+    height: 4vmin;
+    border-color: #C89B3C;
 }
 
 
-body.dark-mode::before  { background: radial-gradient(circle 256px at var(--background-cursor-pos), transparent 50%, rgba(  0,   0,   0, 0.500) 100%); }
-body.light-mode::before { background: radial-gradient(circle 256px at var(--background-cursor-pos), rgba(100, 11, 11, 0.125) 50%, transparent 100%); }
+body.dark-mode::before  { background: radial-gradient(circle 10vmin at var(--background-cursor-pos), transparent 50%, rgba(  0,   0,   0, 0.500) 100%); }
+body.light-mode::before { background: radial-gradient(circle 10vmin at var(--background-cursor-pos), rgba(100, 11, 11, 0.125) 50%, transparent 100%); }
 body.dark-mode  { background-image: url('../images/fondos/darkBackgroundImage.png');  }
 body.light-mode { background-image: url('../images/fondos/lightBackgroundImage.png'); }
 body.dark-mode  #theme-mode p::before { content: 'Modo Oscuro'; }

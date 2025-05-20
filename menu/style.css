@@ -1,21 +1,4 @@
-.window {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.window::before {
-    margin-bottom: -6px;
-}
-.window::after {
-    margin-top: 16px;
-}
-.window .head {
-    color: white;
-}
-.window .body {
-    display: flex;
-    flex-direction: column;
-}
+
 .window .body a {
     color: #ffffff;
     display: flex;
@@ -30,17 +13,4 @@
     height: 16px;
     text-align: center;
     display: block;
-}
-.window .foot {
-    display: flex;
-    flex-direction: row;
-}
-.window .foot a {
-    color: white;
-    border: 1px solid white;
-    padding: 4px 16px;
-}
-.window .foot a:hover {
-    color: #C89B3C;
-    border-color: #C89B3C;
 }

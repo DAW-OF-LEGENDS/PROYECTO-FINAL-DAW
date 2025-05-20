@@ -13,12 +13,16 @@ export class Item {
     }
 }
 export const Items = {
-
-    "ALTERNADOR HEXTECK": new Item("ALTERNADOR HEXTECK", "Alternador Hexteck", "Inicial", "objeto", "no"),
+    // Arreglados
+    "SUELAS SIMBIOTICAS": new Item("SUELAS SIMBIOTICAS", "Suelas simbioticas", "Final"  , "Objeto/Botas", "no"),
+    "ALMAS EN SINCRONIA": new Item("ALMAS EN SINCRONIA", "Almas en sincronia", "Final"  , "Objeto/Botas", "no"),
+    "ALTERNADOR HEXTECK": new Item("ALTERNADOR HEXTECK", "Alternador Hexteck", "Inicial", "Objeto", "no"),
+    "FILO DE LA NOCHE"  : new Item("FILO DE LA NOCHE"  , "Filo de la noche"  , "Final"  , "Objeto", "no"),
+    "BRISA DE ETER"     : new Item("BRISA DE ETER"     , "Brisa de eter"     , "Inicial", "Objeto", "no"),
+    // Por arreglar
     "AMULETO DE LAS HADAS": new Item("AMULETO DE LAS HADAS", "AMULETO DE LAS HADAS", "Inicial", "objeto", "no"),
     "TOMO AMPLIFICADOR": new Item("TOMO AMPLIFICADOR", "Tomo amplicador", "Inicial", "Objeto", "no"),
     "SOBRECARGA TORMENTOSA": new Item("SOBRECARGA TORMENTOSA", "Sobrecarga tormentosa", "Final", "Objeto", "no"),
-    "BRISA DE ETER": new Item("BRISA DE ETER", "Brisa de éter", "Inicial", "Objeto", "no"),
     "DETRACCION CELESTIAL": new Item("DETRACCION CELESTIAL", "Detraccion celestial", "finales", "objeto", "apoyo"),
     "TEJESUEÑOS": new Item("TEJESUEÑOS", "Tejesueños", "finales", "objeto", "apoyo"),
     "PERFORAPLANOS DE ZAZ'ZAK": new Item("PERFORAPLANOS DE ZAZ'ZAK", "Perforaplanos de Zaz'Zak", "finales", "objeto", "apoyo"),
@@ -101,7 +105,6 @@ export const Items = {
     "BASTON DEL VACIO": new Item("BASTON DEL VACIO", "Baston del vacio", "finales", "objeto", "no"),
     "ROMPECASCOS": new Item("ROMPECASCOS", "Rompecascos", "finales", "objeto", "no"),
     "EL FINAL": new Item("EL FINAL", "El final", "finales", "objeto", "no"),
-    "FILO DE LA NOCHE": new Item("FILO DE LA NOCHE", "Filo de la noche", "finales", "objeto", "no"),
     "IMPULSO COSMICO": new Item("IMPULSO COSMICO", "Impulso cosmico", "finales", "objeto", "no"),
     "TORMENTO DE LIANDRY": new Item("TORMENTO DE LIANDRY", "Tormento de Liandry", "finales", "objeto", "no"),
     "ARCOESCUDO INMORTAL": new Item("ARCOESCUDO INMORTAL", "Arcoescudo inmortal", "finales", "objeto", "no"),

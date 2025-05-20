@@ -1,25 +1,6 @@
-.window::before {
-    flex: 0 0 auto;
-}
-.window::after {
-    flex: 0 0 auto;
-}
-.window .head {
-    height: 40px;
-    color: white;
-    flex: 0 0 auto;
-}
-
-
 /* EMPEZAR A CAMBIAR EL CUERPO AQUI */
-
-.window {
-    display: flex;
-    flex-direction: column;
-}
 .window .body {
     display: flex;
-    width: calc(350px + 902px + 54px);
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 16px;
@@ -28,7 +9,7 @@
 main div div.campeon {
     display: block;
     margin: 0;
-    width: 350px;
+    width: calc(256px + 64px);
     border: 2px solid #C89B3C;
     height: 500px;
 }
@@ -37,9 +18,8 @@ main div div.runas {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 900px;
+    width: calc(100% - 16px - 360px);
     border: 2px solid #C89B3C;
-    /* height: 500px; */
     padding: 16px;
     color: white;
 }

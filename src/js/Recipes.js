@@ -41,7 +41,7 @@ export const Recipes = [
     new Recipe(Items["MALLA DE ESPINAS"], [Items["CHALECO DE ZARZAS"], Items["CHALECO DE CADENAS"], Items["CRISTAL DE RUBI"]]),
     new Recipe(Items["CHALECO DE ZARZAS"], [Items["ARMADURA DE TELA"], Items["ARMADURA DE TELA"]]),
     new Recipe(Items["CHALECO DE CADENAS"], [Items["ARMADURA DE TELA"]]),
-    new Recipe(Items["CRISTAL DE RUBI"]), 
+   
 ]
 
 export function findRecipeByResult(item){
